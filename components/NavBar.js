@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Button from "./Button";
-import { Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useState } from "react";
 
@@ -9,11 +9,11 @@ export default function Navbar({ login }) {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   return (
     <nav className="bg-zinc-50 text-base">
-      <ul className="flex justify-between px-20">
+      <ul className="flex justify-between px-20 ">
         <li className="py-6">
           <Link
             href="/"
-            className="flex items-center gap-3 text-lg text-[#000080] font-normal"
+            className="flex items-center gap-3 text-lg text-[#000080]  font-normal"
           >
             <svg
               width="48"
@@ -32,28 +32,33 @@ export default function Navbar({ login }) {
             Domingo
           </Link>
         </li>
-        {isAboveMediumScreens ?<> <li className="flex gap-2 my-5 bg-white rounded-full p-2">
-          <Link href="/">
-            <div className="px-4 py-2">Home</div>
-          </Link>
-          <Link href="/about">
-            <div className="px-4 py-2">About us</div>
-          </Link>
-          <Link href="/properties">
-            <div className="px-4 py-2">Properties</div>
-          </Link>
-        </li>
-        <li className="my-6 flex gap-5">
-          <Button className="py-3 px-6 w-[133px]">Contact us</Button>
-          {login && <Button className="py-3 px-6 w-[133px]">Login</Button>}
-        </li> </>: (
-              <button
-                className="rounded-full bg-[#000080] self-center p-2"
-                onClick={() => setIsMenuToggled(!isMenuToggled)}
-              >
-                <Bars3Icon className="h-6 w-6 text-white" />
-              </button>
-            )}
+        {isAboveMediumScreens ? (
+          <>
+            {" "}
+            <li className="flex gap-2 my-5 bg-white rounded-full p-2">
+              <Link href="/">
+                <div className="px-4 py-2">Home</div>
+              </Link>
+              <Link href="/about">
+                <div className="px-4 py-2">About us</div>
+              </Link>
+              <Link href="/properties">
+                <div className="px-4 py-2">Properties</div>
+              </Link>
+            </li>
+            <li className="my-6 flex gap-5">
+              <Button className="py-3 px-6 w-[133px]">Contact us</Button>
+              {login && <Button className="py-3 px-6 w-[133px]">Login</Button>}
+            </li>{" "}
+          </>
+        ) : (
+          <button
+            className="rounded-full bg-[#000080] self-center p-2"
+            onClick={() => setIsMenuToggled(!isMenuToggled)}
+          >
+            <Bars3Icon className="h-6 w-6 text-white" />
+          </button>
+        )}
       </ul>
 
       {!isAboveMediumScreens && isMenuToggled && (
@@ -67,16 +72,10 @@ export default function Navbar({ login }) {
 
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl text-[#000080]">
-            <Link
-              href="/">Home</Link>
-            <Link
-              href="/about">About us</Link>
-            <Link
-              href="/properties"
-            >Properties</Link>
-            <Link
-              href="/contact"
-            >Contact us</Link>
+            <Link href="/">Home</Link>
+            <Link href="/about">About us</Link>
+            <Link href="/properties">Properties</Link>
+            <Link href="/contact">Contact us</Link>
           </div>
         </div>
       )}

@@ -16,15 +16,15 @@ export default function Review() {
             className="rounded-xl mb-4"
             alt="property"
           />
-          <div className="flex justify-between">
-            <p>Duplex</p>
-            <p>$3,187,200</p>
+          <div className="flex justify-between font-semibold text-lg">
+            <p className="text-[#1a201f]">Duplex</p>
+            <p className="text-[#000080]">$3,187,200</p>
           </div>
-          <p className="text-sm md:text-base">
+          <p className="text-sm md:text-base font-medium text-[#526360] mb-2">
             “Thanks to Domingo I found my dream home effortlessly! The seamless
             interaction with agents streamlined the entire process”
           </p>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-3 ">
             <Image
               width={32}
               height={32}
@@ -32,9 +32,9 @@ export default function Review() {
               alt="customer"
               className="rounded-full"
             />
-            <div>
-              <p className="text-sm md:text-base">Ayesha Craig</p>
-              <p className="text-xs md:text-sm">Domingo Customer</p>
+            <div className=" text-xs font-medium">
+              <p className="text-[#1A201F]">Ayesha Craig</p>
+              <p className="text-[#526360]">Domingo Customer</p>
             </div>
           </div>
         </div>
@@ -47,15 +47,15 @@ export default function Review() {
             className="rounded-xl mb-4"
             alt="property"
           />
-          <div className="flex justify-between">
-            <p>Duplex</p>
-            <p>$3,187,200</p>
+          <div className="flex justify-between font-semibold text-lg">
+            <p className="text-[#1a201f]">Duplex</p>
+            <p className="text-[#000080]">$3,187,200</p>
           </div>
-          <p className="text-sm md:text-base">
+          <p className="text-sm md:text-base font-medium text-[#526360] mb-2">
             “Thanks to Domingo I found my dream home effortlessly! The seamless
             interaction with agents streamlined the entire process”
           </p>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-3 ">
             <Image
               width={32}
               height={32}
@@ -63,9 +63,9 @@ export default function Review() {
               alt="customer"
               className="rounded-full"
             />
-            <div>
-              <p className="text-sm md:text-base">Ayesha Craig</p>
-              <p className="text-xs md:text-sm">Domingo Customer</p>
+            <div className=" text-xs font-medium">
+              <p className="text-[#1A201F]">Ayesha Craig</p>
+              <p className="text-[#526360]">Domingo Customer</p>
             </div>
           </div>
         </div>
@@ -78,16 +78,15 @@ export default function Review() {
             className="rounded-xl mb-4"
             alt="property"
           />
-          <div className="flex justify-between">
-            <p>Duplex</p>
-            <p>$3,187,200</p>
+          <div className="flex justify-between font-semibold text-lg">
+            <p className="text-[#1a201f]">Duplex</p>
+            <p className="text-[#000080]">$3,187,200</p>
           </div>
-          <p className="text-sm md:text-base">
+          <p className="text-sm md:text-base font-medium text-[#526360] mb-2">
             “Thanks to Domingo I found my dream home effortlessly! The seamless
             interaction with agents streamlined the entire process”
           </p>
-
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-3 ">
             <Image
               width={32}
               height={32}
@@ -95,9 +94,9 @@ export default function Review() {
               alt="customer"
               className="rounded-full"
             />
-            <div>
-              <p className="text-sm md:text-base">Ayesha Craig</p>
-              <p className="text-xs md:text-sm">Domingo Customer</p>
+            <div className=" text-xs font-medium">
+              <p className="text-[#1A201F]">Ayesha Craig</p>
+              <p className="text-[#526360]">Domingo Customer</p>
             </div>
           </div>
         </div>

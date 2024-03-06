@@ -8,11 +8,11 @@ export default function Benefits() {
         alt="benefits"
         width={649}
         height={471}
-        className="rounded-lg h-471 w-649 md:w-2/5 md:h-auto md:mr-8"
+        className="rounded-lg h-471 w-649 object-cover"
       />
-      <div className="py-4 md:py-0">
-        <h2 className="text-xl md:text-2xl">Why Domingo?</h2>
-        <p className="text-sm md:text-base">
+      <div className="py-4 md:py-14 md:pl-24">
+        <h2 className="text-xl md:text-4xl font-bold mb-10">Why Domingo?</h2>
+        <p className="text-sm md:text-base max-w-lg font-normal">
           With an extensive network of seasoned professionals with in-depth
           knowledge of the real estate market. We leverage our expertise to
           guide you through every step of your property journey. We are
